@@ -8,6 +8,21 @@
 <title>Swiss Dance Challenge — Matran Centre 2027</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
+<style>
+.hero { height: auto; min-height: 100svh; max-height: none; }
+.hero-content { padding-bottom: 130px; }
+h1 .hero-place {
+  display: block;
+  margin-top: .14em;
+  color: var(--cream);
+  font-size: .65em;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+@media (max-width: 760px) {
+  h1 .hero-place { font-size: .7em; }
+}
+</style>
 <script src="site.js" defer></script>
 </head>
 <body>
@@ -22,7 +37,7 @@
 <div class="hero-shade"></div>
 <div class="hero-content">
 <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> MATRAN CENTRE · SUISSE</p>
-<h1 id="hero-title">SWISS DANCE<br><span>CHALLENGE</span><i aria-hidden="true">↗</i></h1>
+<h1 id="hero-title">SWISS DANCE<br><span>CHALLENGE</span><span class="hero-place">MATRAN CENTRE</span><i aria-hidden="true">↗</i></h1>
 <p class="return">EST DE RETOUR.</p>
 <div class="hero-info"><p class="hero-date">20 — 30<br><strong>JANVIER 2027</strong></p><div><p>La danse prend place à Matran.</p><a class="button" href="#programme">Découvrir le programme <span aria-hidden="true">↗</span></a></div></div>
 </div>
