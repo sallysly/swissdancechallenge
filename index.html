@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#101010">
-<meta name="description" content="Swiss Dance Challenge est de retour à Matran Centre du 20 au 30 janvier 2027. Shows de danse, battles adultes, battles Kidz et chorégraphies. Inscriptions dès fin novembre.">
+<meta name="description" content="Swiss Dance Challenge est de retour à Matran Centre du 20 au 30 janvier 2027. Avec Kamel Ouali, parrain de l’édition et présent pour la finale du 30 janvier 2027. Shows de danse, battles adultes, battles Kidz et chorégraphies. Inscriptions dès fin novembre.">
 <title>Swiss Dance Challenge — Matran Centre 2027</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
@@ -29,6 +29,34 @@ h1 .hero-place {
 @media (max-width: 760px) {
   h1 .hero-place { font-size: .7em; }
 }
+
+/* Parrain de l'édition 2027 */
+.hero-content{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(280px,.85fr);gap:5%;align-items:center;padding-top:155px}
+.hero-copy{min-width:0}
+.hero h1{font-size:clamp(70px,8.2vw,132px)}
+.hero h1 i{display:none}
+.patron-card{margin:0;background:var(--cream);color:var(--black);box-shadow:0 20px 60px #0005;transform:rotate(1deg)}
+.patron-card img{display:block;width:100%;aspect-ratio:1/1.05;object-fit:cover;object-position:50% 38%}
+.patron-copy{padding:23px 26px 26px;border-top:5px solid var(--red)}
+.patron-label{font-size:10px;font-weight:800;letter-spacing:2px;margin:0 0 9px;color:#b21b30}
+.patron-name{font:800 clamp(40px,4.3vw,67px)/.95 var(--display);letter-spacing:-1px;margin:0 0 16px}
+.patron-finale{border-top:1px solid #10101030;padding-top:14px;margin:0;font-size:13px;line-height:1.6}
+.patron-finale strong{display:block;font-size:17px}
+@media(max-width:760px){
+.hero-content{display:flex;flex-direction:column;gap:30px;padding:113px 6% 100px}
+.patron-card{order:-1;transform:none;width:100%;max-width:480px;display:grid;grid-template-columns:46% 54%}
+.patron-card img{height:100%;min-height:245px;aspect-ratio:auto;object-position:50% 35%}
+.patron-copy{padding:20px 16px;border-top:0;border-left:4px solid var(--red);display:flex;flex-direction:column;justify-content:center}
+.patron-name{font-size:40px}
+.patron-label{font-size:9px;letter-spacing:1px;line-height:1.6}
+.patron-finale{font-size:11px}
+.patron-finale strong{font-size:14px}
+.hero-copy{width:100%}
+.hero h1{font-size:clamp(60px,14.4vw,107px);margin-top:25px}
+.hero .eyebrow{margin-bottom:18px}
+.hero-info{margin-top:25px}
+}
+
 </style>
 <script src="site.js" defer></script>
 </head>
@@ -43,11 +71,17 @@ h1 .hero-place {
 <video id="cover" autoplay muted loop playsinline preload="metadata" poster="matran-poster.jpg" aria-label="Danseurs et DJs lors d’une précédente édition du Swiss Dance Challenge"><source src="matran-cover.mp4" type="video/mp4"></video>
 <div class="hero-shade"></div>
 <div class="hero-content">
+<div class="hero-copy">
 <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> MATRAN CENTRE · SUISSE</p>
 <h1 id="hero-title">SWISS DANCE<br><span>CHALLENGE</span><span class="hero-place">MATRAN CENTRE</span><i aria-hidden="true">↗</i></h1>
 <p class="hero-address">Rte du Bois, 1753 Matran</p>
 <p class="return">EST DE RETOUR.</p>
 <div class="hero-info"><p class="hero-date">20 — 30<br><strong>JANVIER 2027</strong></p><div><p>La danse prend place à Matran.</p><a class="button" href="#programme">Découvrir le programme <span aria-hidden="true">↗</span></a></div></div>
+</div>
+<aside class="patron-card" aria-label="Kamel Ouali, parrain du Swiss Dance Challenge Matran Centre">
+<img src="kamel-ouali.jpeg" alt="Kamel Ouali, parrain du Swiss Dance Challenge Matran Centre 2027" width="1022" height="1536" fetchpriority="high">
+<div class="patron-copy"><p class="patron-label">LE PARRAIN DE L’ÉDITION 2027</p><h2 class="patron-name">KAMEL<br>OUALI</h2><p class="patron-finale">Présent pour la finale<strong>30 JANVIER 2027</strong>À Matran Centre</p></div>
+</aside>
 </div>
 <div class="hero-bottom"><span>SHOWS / BATTLES / CHORÉGRAPHIES</span><button id="video-toggle" type="button" hidden>Mettre en pause <span aria-hidden="true">Ⅱ</span></button><a href="#programme" aria-label="Descendre au programme">↓</a></div>
 </section>
@@ -70,4 +104,5 @@ h1 .hero-place {
 <footer><a href="#accueil" class="brand"><span class="cross" aria-hidden="true">✚</span><span>SWISS DANCE<br>CHALLENGE</span></a><p>Association Esprit du Cercle<br>Matran Centre · 2027</p><a href="#accueil">Retour en haut ↑</a></footer>
 </body>
 </html>
+
 
