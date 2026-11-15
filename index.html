@@ -69,6 +69,10 @@ h1 .hero-place {
 .guest-judge-links{display:flex;gap:18px;flex-wrap:wrap;margin-top:24px}
 .guest-judge-links a{color:var(--cream);font-weight:800;text-underline-offset:5px}
 @media(max-width:760px){.guest-judge-card{grid-template-columns:1fr;gap:24px}.guest-judge-photo{max-height:620px;object-position:center 30%}}
+.dance-show-group{margin-top:38px;padding:26px 0 34px;border-top:2px solid rgba(20,20,20,.18)}
+.dance-show-group-second{margin-top:12px;padding-top:34px;border-top:3px solid var(--black)}
+.dance-show-group-label{font-size:13px!important;font-weight:900!important;letter-spacing:2px;text-transform:uppercase;margin:0 0 26px!important;display:flex;align-items:center;gap:14px}
+.dance-show-group-label:after{content:"";height:1px;background:currentColor;opacity:.3;flex:1}
 /* Dance Shows — école invitée */
 .dance-shows{background:var(--cream);color:var(--black)}
 .dance-show-card{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:5%;align-items:center}
@@ -122,6 +126,8 @@ h1 .hero-place {
 
 <section class="dance-shows section" id="dance-shows" aria-labelledby="dance-shows-title">
   <div class="section-intro"><p class="eyebrow">02 / DANCE SHOWS</p><h2 id="dance-shows-title">LES ÉCOLES<br>À L’HONNEUR<span>.</span></h2><p>Découvrez les écoles et les artistes qui font vivre la danse en Suisse.</p></div>
+  <div class="dance-show-group">
+    <p class="dance-show-group-label">GROUPE SHOW 1</p>
   <article class="dance-show-card">
     <div class="dance-show-brand"><img src="https://raw.githubusercontent.com/sallysly/swissdancechallenge/main/MM%20Danse%20Final.jpg" alt="Logo de Mariela Mobilla Danse" loading="lazy"></div>
     <div class="dance-show-copy">
@@ -133,10 +139,10 @@ h1 .hero-place {
   </article>
 
   <video class="dance-show-video" controls playsinline preload="metadata" aria-label="Présentation de Mariela Mobilla Danse"><source src="https://raw.githubusercontent.com/sallysly/swissdancechallenge/main/real%20h24%20MARIEL%20DANCE%20VIDEO2.mp4" type="video/mp4">Votre navigateur ne prend pas en charge la lecture vidéo.</video>
+  </div>
 
-
-
-
+  <div class="dance-show-group dance-show-group-second">
+    <p class="dance-show-group-label">GROUPE SHOW 2 · MDC</p>
   <article class="dance-show-card">
     <div class="dance-show-brand"><img src="https://raw.githubusercontent.com/sallysly/swissdancechallenge/main/%20academie-mdc-logo.jpeg.JPG" alt="Logo de l'Académie MDC" loading="lazy"></div>
     <div class="dance-show-copy">
@@ -147,6 +153,8 @@ h1 .hero-place {
     </div>
   </article>
 
+
+  </div>
 </section>
 
 <section class="guest-judges section" id="guest-judges" aria-labelledby="guest-judges-title">
