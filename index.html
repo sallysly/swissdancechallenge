@@ -58,6 +58,17 @@ h1 .hero-place {
 }
 
 
+/* Guest Judges */
+.guest-judges{background:var(--black);color:var(--cream)}
+.guest-judge-card{display:grid;grid-template-columns:minmax(260px,.72fr) minmax(0,1.28fr);gap:5%;align-items:start}
+.guest-judge-photo{width:100%;max-height:760px;object-fit:cover;object-position:center 35%;display:block}
+.guest-judge-copy h3{font:800 clamp(36px,4vw,62px)/.98 var(--display);margin:0 0 12px}
+.guest-judge-role{font-size:12px!important;font-weight:800;letter-spacing:1.4px;line-height:1.7;text-transform:uppercase}
+.guest-judge-copy p{font-size:15px;line-height:1.8;max-width:760px}
+.guest-judge-copy .guest-judge-intro{font-weight:700;font-size:17px}
+.guest-judge-links{display:flex;gap:18px;flex-wrap:wrap;margin-top:24px}
+.guest-judge-links a{color:var(--cream);font-weight:800;text-underline-offset:5px}
+@media(max-width:760px){.guest-judge-card{grid-template-columns:1fr;gap:24px}.guest-judge-photo{max-height:620px;object-position:center 30%}}
 /* Dance Shows — école invitée */
 .dance-shows{background:var(--cream);color:var(--black)}
 .dance-show-card{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:5%;align-items:center}
@@ -77,7 +88,7 @@ h1 .hero-place {
 <a href="#programme" class="skip">Aller au programme</a>
 <header class="site-header">
 <a href="#accueil" class="brand" aria-label="Swiss Dance Challenge, accueil"><span class="cross" aria-hidden="true">✚</span><span>SWISS DANCE<br>CHALLENGE</span></a>
-<nav aria-label="Navigation principale"><a href="#programme">Le programme</a><a href="#dance-shows">Dance Shows</a><a href="#matran">Matran Centre</a><a class="nav-cta" href="#inscriptions">Inscriptions <span aria-hidden="true">↗</span></a></nav>
+<nav aria-label="Navigation principale"><a href="#programme">Le programme</a><a href="#dance-shows">Dance Shows</a><a href="#guest-judges">Guest Judges</a><a href="#matran">Matran Centre</a><a class="nav-cta" href="#inscriptions">Inscriptions <span aria-hidden="true">↗</span></a></nav>
 </header>
 <main>
 <section class="hero" id="accueil" aria-labelledby="hero-title">
@@ -120,7 +131,32 @@ h1 .hero-place {
       <div class="dance-show-links"><a href="https://www.marieladanse.ch" target="_blank" rel="noopener">Site officiel ↗</a><a href="https://www.instagram.com/marie.ladanse/" target="_blank" rel="noopener">Instagram ↗</a></div>
     </div>
   </article>
+
+  <article class="dance-show-card">
+    <div class="dance-show-brand"><img src="academie-mdc-logo.jpeg" alt="Logo de l'Académie MDC" loading="lazy"></div>
+    <div class="dance-show-copy">
+      <p class="dance-show-meta">Neuchâtel · Suisse</p>
+      <h3>ACADÉMIE MDC</h3>
+      <p>Melinda Stampfli est une artiste suisse, chorégraphe, metteuse en scène, Movement Director et pédagogue, dont le parcours se construit autour de la danse, de la création et de la transmission. Formée à la prestigieuse Staatliche Ballettschule de Berlin, elle poursuit sa carrière professionnelle au Ballet National de Madrid, où elle évolue jusqu'au rang de soliste. En 2004, elle fonde à Neuchâtel l'Académie MDC, un lieu de formation et de création artistique où elle accompagne depuis plus de vingt ans de nouvelles générations de danseurs et d'enseignants. Nombreux sont les artistes formés à ses côtés qui poursuivent aujourd'hui une carrière professionnelle internationale en tant que danseurs, chorégraphes ou professeurs. Son parcours artistique l'amène à collaborer avec de grandes maisons et des artistes de renommée internationale, notamment Dior, Louis Vuitton, Bvlgari, L'Occitane et David Guetta, ainsi qu'à développer des projets artistiques en Suisse et à l'étranger. Fondatrice et directrice artistique de melindadancecompany, créée en 2019, elle développe un univers chorégraphique singulier, où le mouvement devient un langage au service de l'émotion, de l'authenticité et de l'expression humaine. Ses créations, notamment KIZUNA et BETWEEN TWO POINTS, explorent les liens entre les êtres, les cultures et les différentes dimensions de notre humanité. Le Japon occupe également une place privilégiée dans son parcours artistique. Régulièrement invitée à y transmettre son savoir à travers des masterclasses, des résidences de création et la réalisation de spectacles, elle y tisse de précieux liens humains et artistiques, nourrissant un dialogue entre les cultures qui enrichit profondément son univers chorégraphique. Son engagement dans la formation et la transmission se traduit également par son activité de professeure invitée, de formatrice d'enseignants et de membre de jury lors de concours et d'événements artistiques nationaux et internationaux. Son travail chorégraphique et celui de ses élèves ont été récompensés à de nombreuses reprises lors de compétitions en Suisse et à l'étranger. Depuis septembre 2026, Melinda Stampfli occupe également la fonction de présidente de la Fédération suisse des écoles de danse, poursuivant ainsi son engagement en faveur de la reconnaissance, de la qualité de l'enseignement et du développement de la danse en Suisse. Au cœur de sa démarche demeure une conviction profonde : au-delà de la technique et de la performance, l'art est avant tout un langage universel, un espace de rencontres et un moyen d'exprimer ce qui nous relie profondément les uns aux autres.</p>
+      <div class="dance-show-links"><a href="https://academiemdc.ch/" target="_blank" rel="noopener">Site officiel ↗</a><a href="https://www.instagram.com/melindadancecenter?vrfl=Y2E4MXF1YzdtbGdt" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </div>
+  </article>
+
   <video class="dance-show-video" controls playsinline preload="metadata" aria-label="Présentation de Mariela Mobilla Danse"><source src="https://raw.githubusercontent.com/sallysly/swissdancechallenge/main/real%20h24%20MARIEL%20DANCE%20VIDEO2.mp4" type="video/mp4">Votre navigateur ne prend pas en charge la lecture vidéo.</video>
+</section>
+
+<section class="guest-judges section" id="guest-judges" aria-labelledby="guest-judges-title">
+  <div class="section-intro"><p class="eyebrow">03 / GUEST JUDGES</p><h2 id="guest-judges-title">LES ARTISTES<br>DU JURY<span>.</span></h2><p>Découvrez les personnalités qui accompagneront le Swiss Dance Challenge.</p></div>
+  <article class="guest-judge-card">
+    <img class="guest-judge-photo" src="melinda-stampfli.jpeg" alt="Portrait de Melinda Stampfli" loading="lazy">
+    <div class="guest-judge-copy">
+      <p class="eyebrow">PREMIÈRE JUGE INVITÉE</p>
+      <h3>MELINDA<br>STAMPFLI</h3>
+      <p class="guest-judge-role">Chorégraphe · Metteuse en scène · Movement Director · Pédagogue · Directrice artistique</p>
+      <p class="guest-judge-intro">Melinda Stampfli est une artiste suisse, chorégraphe, metteuse en scène, Movement Director et pédagogue, dont le parcours se construit autour de la danse, de la création et de la transmission. Formée à la prestigieuse Staatliche Ballettschule de Berlin, elle poursuit sa carrière professionnelle au Ballet National de Madrid, où elle évolue jusqu'au rang de soliste. En 2004, elle fonde à Neuchâtel l'Académie MDC, un lieu de formation et de création artistique où elle accompagne depuis plus de vingt ans de nouvelles générations de danseurs et d'enseignants. Nombreux sont les artistes formés à ses côtés qui poursuivent aujourd'hui une carrière professionnelle internationale en tant que danseurs, chorégraphes ou professeurs. Son parcours artistique l'amène à collaborer avec de grandes maisons et des artistes de renommée internationale, notamment Dior, Louis Vuitton, Bvlgari, L'Occitane et David Guetta, ainsi qu'à développer des projets artistiques en Suisse et à l'étranger. Fondatrice et directrice artistique de melindadancecompany, créée en 2019, elle développe un univers chorégraphique singulier, où le mouvement devient un langage au service de l'émotion, de l'authenticité et de l'expression humaine. Ses créations, notamment KIZUNA et BETWEEN TWO POINTS, explorent les liens entre les êtres, les cultures et les différentes dimensions de notre humanité. Le Japon occupe également une place privilégiée dans son parcours artistique. Régulièrement invitée à y transmettre son savoir à travers des masterclasses, des résidences de création et la réalisation de spectacles, elle y tisse de précieux liens humains et artistiques, nourrissant un dialogue entre les cultures qui enrichit profondément son univers chorégraphique. Son engagement dans la formation et la transmission se traduit également par son activité de professeure invitée, de formatrice d'enseignants et de membre de jury lors de concours et d'événements artistiques nationaux et internationaux. Son travail chorégraphique et celui de ses élèves ont été récompensés à de nombreuses reprises lors de compétitions en Suisse et à l'étranger. Depuis septembre 2026, Melinda Stampfli occupe également la fonction de présidente de la Fédération suisse des écoles de danse, poursuivant ainsi son engagement en faveur de la reconnaissance, de la qualité de l'enseignement et du développement de la danse en Suisse. Au cœur de sa démarche demeure une conviction profonde : au-delà de la technique et de la performance, l'art est avant tout un langage universel, un espace de rencontres et un moyen d'exprimer ce qui nous relie profondément les uns aux autres.</p>
+      <div class="guest-judge-links"><a href="https://academiemdc.ch/" target="_blank" rel="noopener">Académie MDC ↗</a><a href="https://www.instagram.com/melindadancecenter?vrfl=Y2E4MXF1YzdtbGdt" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </div>
+  </article>
 </section>
 
 <section class="matran section" id="matran">
